@@ -14,7 +14,7 @@ import { Button } from "../ui/button";
 export default function LoginModal() {
   const handleLogin = () => {
     signIn("google", {
-      callbackUrl: "/dashboard",
+      callbackUrl: "/",
       redirect: true,
     });
   };

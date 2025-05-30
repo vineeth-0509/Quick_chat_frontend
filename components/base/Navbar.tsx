@@ -1,14 +1,10 @@
 "use client";
 import React from "react";
 import Link from "next/link";
-
-
-
-
 import LoginModal from "../auth/LoginModal";
 import { CustomUser } from "@/app/api/auth/[...nextauth]/options";
 import { Button } from "../ui/button";
-export default function Navbar({user}:{user?:CustomUser}) {
+export default function Navbar({ user }: { user?: CustomUser }) {
   return (
     <nav className="p-6 flex justify-between items-center bg-white shadow-sm">
       <h1 className="text-xl md:text-2xl font-extrabold">QuickChat</h1>
