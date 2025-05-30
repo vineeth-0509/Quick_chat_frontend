@@ -1,6 +1,7 @@
 import React from "react";
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
+import { signIn } from "next-auth/react";
 
 export default function HeroSection() {
   return (
@@ -13,7 +14,11 @@ export default function HeroSection() {
         conversations in seconds.
       </p>
       <Link href="/dashboard">
-        <Button size="lg" className="animate-pulse">
+        <Button
+          size="lg"
+          className="animate-pulse"
+          onClick={() => signIn("google", { callbackUrl: "/dashboard" })}
+        >
           Start Chatting
         </Button>
       </Link>
