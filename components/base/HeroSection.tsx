@@ -18,7 +18,6 @@ export default function HeroSection() {
         <Button
           size="lg"
           className="animate-pulse"
-          onClick={() => signIn("google", { callbackUrl: "/dashboard" })}
         >
           Start Chatting
         </Button>
