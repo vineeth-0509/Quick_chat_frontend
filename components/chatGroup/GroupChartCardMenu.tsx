@@ -26,7 +26,7 @@ export default function GroupChatCardMenu({
   const [editDialoag, setEditDialog] = useState(false);
 
   const handleCopy = () => {
-    navigator.clipboard?.writeText(`localhost:3000/chats/${group.id}`);
+    navigator.clipboard?.writeText(`https://vineeth_Quick_chat.vercel.app/chats/${group.id}`);
     toast.success("Link copied successfully!");
   };
 
